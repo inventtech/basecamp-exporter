@@ -1,0 +1,21 @@
+node_modules/
+
+# Local secrets
+.env
+.env.local
+
+# Cached OAuth tokens written by `bun start auth`
+.bc-auth.json
+
+# Generated exports
+exports/
+*.xlsx
+
+# Logs / OS cruft
+*.log
+.DS_Store
+
+data
+
+# Local Claude Code config (personal — not shared)
+.claude/

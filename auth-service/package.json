@@ -1,0 +1,21 @@
+{
+  "name": "basecamp-auth-service",
+  "version": "0.1.0",
+  "description": "Hono service that runs the Basecamp OAuth callback and returns an access token",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "dev": "bun --watch src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "deploy": "railway up -s basecamp-auth"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}

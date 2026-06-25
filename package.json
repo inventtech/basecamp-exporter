@@ -1,0 +1,24 @@
+{
+  "name": "basecamp-exporter",
+  "version": "0.1.0",
+  "description": "Export Basecamp to-dos to Excel (.xlsx) via the Basecamp API",
+  "type": "module",
+  "module": "src/index.ts",
+  "bin": {
+    "basecamp-export": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "export": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
